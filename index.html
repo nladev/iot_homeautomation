@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Home Automation">
+    <meta name="author" content="Nay Lin Aung">
+    <link rel="icon" href="img/wireless.png">
+
+    <title>Home Automation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/signin.css" rel="stylesheet" type="text/css"/>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootbox.min.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="    https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#formLogin").submit(function(){
+                var objects = this;
+                var datas = new FormData(objects);
+                $.ajax({
+                    type : 'POST',
+                    url : 'process.php',
+                    data : datas,
+                    processData : false,
+                    cache : false,
+                    contentType : false,
+                    success : function(result){
+                        if(result.indexOf("login_ok")>=0){
+                            window.location.replace("control.php");
+                        }else if(result.indexOf("login_error")>=0){
+                                bootbox.alert({
+                                    title: "Sorry!",
+                                    message: "Login Failed!",
+                                    className: 'bb-alternate-modal'
+                                });
+                        }
+                    }
+                });
+                return false;
+            });
+        });
+        </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="text-center">
+            <h2>Home Automation</h2>
+            <img src="img/wireless.png" class="rounded" alt="LOGO">
+        </div>
+        <form class="form-signin" id="formLogin" name="formLogin">
+        <input type="text" id="username" name="username" class="form-control" placeholder="Username" autofocus>
+        <br>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+        <br>
+        <button class="btn btn-lg btn-success btn-block " type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
+  </body>
+</html>

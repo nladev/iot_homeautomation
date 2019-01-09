@@ -1,0 +1,51 @@
+.body{
+    margin: auto;
+    padding: 0;
+}
+#aa,#bb,#cc,#dd{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+#aa:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+#bb:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+#cc:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+#dd:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+img{
+  width:200px;
+  height: 200px;
+}
+.latter{
+  width:300px;
+  height: 100px;
+  background: #707070;
+  padding-top:20px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}

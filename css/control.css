@@ -1,0 +1,36 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+#aa,#bb,#cc{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  width: auto;
+  height: 200px;
+  padding-top: 80px;
+  margin: auto;
+  background: #80d4ff;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+#aa:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+#bb:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+#cc:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}

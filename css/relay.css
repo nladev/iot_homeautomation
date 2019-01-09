@@ -1,0 +1,37 @@
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9,#b10{
+ padding:1px;
+ margin:2px;
+ width: 80px;
+ height: 35px;
+ color:white;
+ top:50%; 
+  left:50%;
+}
+.left{
+    background: #fff;
+}
+
+.aa{
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  margin: auto;
+  background: #FFF;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+  transition: all 0.3s; 
+  border-radius: 5px;
+}
+
+.aa:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+
+#text-content{
+    text-align: right;
+    padding-top: 10px;
+    padding-right:50px;
+    border-right:2px solid #099;
+}
